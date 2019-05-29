@@ -11,9 +11,8 @@ class NavBarDos extends Component {
                         <img className="ui centered small image" src="/data/logo.png" />
                     </div>
                     <div className="right menu listaaa">
-                        <a className="item ">Lista de personas</a>
-                        <a className="item">Generos Musicales</a>
-                        <a className=" active item">Arte y Música</a>
+                        <a className="item ">PLAYLIST</a>
+                        <a className=" active item">MUSI-CALI</a>
                     </div>
                 </div>
             </div>

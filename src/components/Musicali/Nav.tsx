@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 
 
-class NavBar extends Component {
+class Nav extends Component {
 
   render() {
     return (
-      <div className="ui inverted segment">
+      <div className="ui purple inverted segment">
         <div className="ui inverted secondary menu">
-          <div className="right menu listaaa">
+          <div className="right menu">
             <a className="item ">PLAYLIST</a>
             
-            <a className=" active item">MUSI-CALI</a>
+            <a className="active item">MUSI-CALI</a>
           </div>
         </div>
       </div>
@@ -18,4 +18,4 @@ class NavBar extends Component {
   }
 }
 
-export default NavBar;
+export default Nav;

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
 
 import Home from '../Home/Home';
-import UserProfile from '../UserProfile/UserProfile';
 import Musicali from '../Musicali/Musicali';
 import storage from '../../storage/storage';
+import Login from '../Login/Login';
+
 
 
 class App extends Component {
@@ -20,7 +21,7 @@ class App extends Component {
     setTimeout(() => {
       storage.csvGetPeopleFest();
 
-    }, 3000);
+    }, 1000);
 
   }
 
@@ -28,8 +29,8 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Route path='/' exact component={Home}></Route>
-          <Route path='/user' exact component={UserProfile}></Route>
+        <Route path='/' exact component={Login}></Route>
+          <Route path='/home' exact component={Home}></Route>
           <Route path='/musicali' exact component={Musicali}></Route>
         </div>
       </Router>
@@ -39,4 +40,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default observer (App);

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 
 class Nav extends Component {
@@ -8,9 +9,8 @@ class Nav extends Component {
       <div className="ui purple inverted segment">
         <div className="ui inverted secondary menu">
           <div className="right menu">
-            <a className="item ">PLAYLIST</a>
-            
-            <a className="active item">MUSI-CALI</a>
+            <a className="active item">
+              <Link to="/home">CALIFEST</Link></a>
           </div>
         </div>
       </div>

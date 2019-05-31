@@ -10,7 +10,7 @@ class Footer extends Component {
                     <div className="column">
                         <div className="ui black inverted segment">
                             <div className="black center aligned row">
-                                <img className="ui centered small image" src="/data/logo.png" />
+                                <img className="ui centered small image" src="/data/logo.svg" />
                             </div>
                         </div>
                     </div>
